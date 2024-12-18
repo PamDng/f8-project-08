@@ -1,9 +1,11 @@
+@use "../abstracts";
+
 .dropdown {
     position: absolute;
     left: 0;
     padding-top: 54px;
     width: min(1240px, 100%);
-    // display: none;
+    display: none;
 
     &__inner {
         --inner-padding: 30px;
@@ -49,6 +51,10 @@
         width: 36px;
         height: 36px;
         position: relative;
+
+        @include abstracts.breakpoint(xl) {
+            display: none;
+        }
     }
 
     &__content {
@@ -58,17 +64,17 @@
     &__icon-1 {
         width: 30px;
         height: 30px;
-        object-fit: cover;
+        object-fit: contain;
     }
 
     &__icon-2{
         width: 24px;
         height: 24px;  
-        object-fit: cover; 
+        object-fit: contain; 
         position: absolute;
         right: 0;
         bottom: 0;
-        filter: --menu-column-icon-color;
+        filter: var(--menu-column-icon-color);
     }
 
     &__heading {
