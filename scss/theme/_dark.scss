@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 html.dark {
     --text-color: #FFFFFF;
     --icon-color: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7460%) hue-rotate(179deg) brightness(110%) contrast(100%);
@@ -8,8 +10,16 @@ html.dark {
     --top-act-group-shadow: rgba(0, 0, 0, 0.20);
     --top-act-group-separate: #EDEDF6;
 
+   
     // Dropdown
     --dropdown-bg-color: #2f3441;
     --dropdown-shadow-color: rgba(23, 28, 40, 0.40);
     --dropdown-arrow-color: brightness(0) saturate(100%) invert(13%) sepia(6%) saturate(3018%) hue-rotate(186deg) brightness(94%) contrast(78%);
+    --top-menu-border-color: #171C28;
+    --menu-column-icon-color: brightness(0) saturate(100%) invert(100%) sepia(13%) saturate(2469%) hue-rotate(180deg) brightness(101%) contrast(96%);
+
+
+    @include abstracts.breakpoint(lg) {
+        --header-shadow-color: rgba(0, 0, 0, 0.20);
+    }
 }
