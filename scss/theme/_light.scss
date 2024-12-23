@@ -14,7 +14,7 @@ html {
     --dropdown-bg-color: #FFF;
     --dropdown-shadow-color: rgba(200, 200, 200, 0.40);
     --top-menu-border-color: #D2D1D6;
-    --menu-column-icon-color: brightness(0) saturate(100%) invert(100%) sepia(13%) saturate(2469%) hue-rotate(180deg) brightness(101%) contrast(96%);
+    --menu-column-icon-color: filter: brightness(0) saturate(100%) invert(10%) sepia(10%) saturate(3116%) hue-rotate(210deg) brightness(91%) contrast(99%);
 
     @include abstracts.breakpoint(lg) {
         --header-bg-color: #FFF;
