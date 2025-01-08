@@ -25,6 +25,16 @@ html {
     --cate-item-thumb-bg: #FFF;
     --cate-item-title-color: #000;
 
+    // Button
+    --filter-btn-color: #6C6C72;
+    --filter-btn-bg: #FFF;
+
+    --like-btn-shadow: rgba(124, 124, 124, 0.20);
+
+    // Product card
+    --product-card-bg: #FFF;
+    --product-card-shadow:rgba(237, 237, 246, 0.20);
+
 
     @include abstracts.screen(lg) {
         --header-bg-color: #FFF;
