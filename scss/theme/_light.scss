@@ -20,9 +20,19 @@ html {
     --sidebar-bg:#FFF;
     --sidebar-shadow: 0px 40px 90px 20px rgba(23, 28, 40, 0.40);
 
+    // Category item
+    --cate-item-bg: #eee;
+    --cate-item-thumb-bg: #FFF;
+    --cate-item-title-color: #000;
+
+
     @include abstracts.screen(lg) {
         --header-bg-color: #FFF;
         --header-shadow-color: rgba(200, 200, 200, 0.40);
+    }
+
+    @include abstracts.screen(md) {
+        --cate-item-bg: #fff;
     }
 
     
